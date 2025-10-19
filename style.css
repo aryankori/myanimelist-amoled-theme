@@ -1,0 +1,141 @@
+/* MyAnimeList AMOLED Theme - Ultra Dark with Cyan Accents */
+
+/* Base colors */
+:root {
+  --primary-bg: #000000;
+  --secondary-bg: #0a0a0a;
+  --card-bg: #0f0f0f;
+  --accent-cyan: #00e5ff;
+  --accent-cyan-hover: #00b8d4;
+  --text-primary: #e0e0e0;
+  --text-secondary: #9e9e9e;
+  --border-color: #1a1a1a;
+}
+
+/* Global styles */
+body {
+  background-color: var(--primary-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Navigation and header */
+#myanimelist, #menu {
+  background-color: var(--secondary-bg) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+/* Content containers */
+.container, .content, #content {
+  background-color: var(--primary-bg) !important;
+}
+
+/* Cards and list items */
+.list-item, .anime-list-item, .manga-list-item {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Links */
+a {
+  color: var(--accent-cyan) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--accent-cyan-hover) !important;
+  text-decoration: underline !important;
+}
+
+/* Buttons */
+button, .button, input[type="submit"], input[type="button"] {
+  background-color: var(--card-bg) !important;
+  color: var(--accent-cyan) !important;
+  border: 1px solid var(--accent-cyan) !important;
+  border-radius: 4px !important;
+  padding: 8px 16px !important;
+  cursor: pointer !important;
+}
+
+button:hover, .button:hover {
+  background-color: var(--accent-cyan) !important;
+  color: var(--primary-bg) !important;
+}
+
+/* Text inputs */
+input[type="text"], input[type="search"], textarea, select {
+  background-color: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 4px !important;
+  padding: 8px !important;
+}
+
+/* Tables */
+table {
+  background-color: var(--primary-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--secondary-bg) !important;
+}
+
+table th {
+  background-color: var(--card-bg) !important;
+  color: var(--accent-cyan) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+table td {
+  border: 1px solid var(--border-color) !important;
+}
+
+/* Sidebar */
+#nav, .sidebar {
+  background-color: var(--secondary-bg) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* Score colors */
+.score-10, .score-9 { color: #00e676 !important; }
+.score-8, .score-7 { color: #76ff03 !important; }
+.score-6, .score-5 { color: #ffea00 !important; }
+.score-4, .score-3 { color: #ff9100 !important; }
+.score-2, .score-1 { color: #ff1744 !important; }
+
+/* Status colors */
+.watching, .reading { color: var(--accent-cyan) !important; }
+.completed { color: #00e676 !important; }
+.on-hold { color: #ffea00 !important; }
+.dropped { color: #ff1744 !important; }
+.plan-to-watch, .plan-to-read { color: #9e9e9e !important; }
+
+/* Images */
+img {
+  border-radius: 4px !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* Hover effects */
+.list-item:hover, .anime-list-item:hover, .manga-list-item:hover {
+  border-color: var(--accent-cyan) !important;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px !important;
+  background-color: var(--primary-bg) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 6px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-cyan) !important;
+}
